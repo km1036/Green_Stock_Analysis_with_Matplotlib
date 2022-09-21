@@ -8,10 +8,10 @@ Ameresco is a renewable energy and energy efficiency company. Ameresco's portfol
 * AMRC stood out to me as a company to invest in because of its strong energy sales in the past year, making it a top-performing stock in the energy sector. Sales soared 111% last quarter and its stock continues to rise.
 
 Onsemi is a leading semiconductor manufacturer that has achieved success in several technologies and markets. Rebranded as onsemi, the company has been rated as Barron’s 100 “Most Sustainable Companies” for four years in a row and in 2020, onsemi was named to Dow Jones Sustainability Index for the third year in a row.
-* Onsemi has been accelerating change in megatrends such as vehicle electrification and safety, sustainable energy grids, industrial automation, and 5G and cloud infrastructure and has $2.085 billion revenue 
+* Onsemi has been accelerating change in megatrends such as vehicle electrification and safety, sustainable energy grids, industrial automation, and 5G and cloud infrastructure. It's projected towards $2.085 billion revenue by the end of 2022.
 
-
-
+Stem provides clean energy solutions with "clean energy intelligence. Stem's AI-driven enterprise software platform, Athena, enables organizations to deploy and monoteizse utility scale systems. The majority of Stem's clients are mid-sized commercial and industrial businesses, including Fortune 500 companies, and utilies and independent power producers that are seeking ways to save on energy to meet their ESG goals and make a positive impact on the environment. Stem focuses on maximizing ROI by demonstrating the value of renewable assets with energy storage. 
+* Stem stood out to me as a company I'd want to invest in because of its long-term software contracts and because it targets a market growing 25x to $1.2 trillion by 2050. 
 
 
 
