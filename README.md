@@ -41,6 +41,8 @@ All financial data is extracted in code from Yahoo Finance via yfinance library 
 
 ## Data Mining with Python
 
+## Alternatives in Code
+
 
 ## Visual Representation of Data via Python
 
