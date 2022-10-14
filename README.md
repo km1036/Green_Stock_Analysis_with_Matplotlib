@@ -30,7 +30,7 @@ Python
 
 Libraries:
 
-matplotlib, pandas, pandas_datareader, numpy, datetime, yfinance, scattermatrix
+matplotlib.pyplot as plt, pandas, hvplot.pandas, pandas_datareader, numpy, datetime, yfinance as yf, scattermatrix, warnings, mplcyberpunk
 
 Database: N/A
 
@@ -118,7 +118,9 @@ All financial data is extracted in code from Yahoo Finance via yfinance library 
 
 
 
+## Explanation of Visualization Techniques
 
+## Conclusion
 
 
 
