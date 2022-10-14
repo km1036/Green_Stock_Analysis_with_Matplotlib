@@ -46,12 +46,6 @@ All financial data is extracted in code from Yahoo Finance via yfinance library 
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/extract_2.jpg" />
 
 
-
-
-## Alternatives in Code
-
-
-
 ## Visual Representation of Data via Python
 
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/amrc_dpc.jpg" />
