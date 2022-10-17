@@ -81,11 +81,19 @@ All financial data is extracted in code from Yahoo Finance via yfinance library 
 ## Moving Averages - STEM Plot
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/stem_movingav.jpg" />
 
-## Moving Average Visualization with HVPlot package
+## Method 2: Moving Average Visualization with HVPlot package
+
+### The benefit to using the hvplot package for plotting moving averages is the abiilty to produce an interactive map. With this map, we are able to scroll over the points that indicate entry/exit positions over the total portfolio value for the investment. Each point is able to indicate the date and the porfolio total at that position.
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/movingav_hvplot.jpg" />
 
 
 # Daily Percentage Change
+
+###  DPC is a technical analysis tool used to measure volatility (distribution). DPC is the change in a value of a stock over a single trading day. The larger the value (positive or negative), the more volatile the stock is.
+
+### 2-3% (or 0.02 / 0.03 is considered high volatility, a.k.a more risk)
+
+### Formula for calculating DPC which will be used in code:  rt = Pt/Pt-1 -1
 
 ## Daily Percentage Change - AMRC
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/amrc_dpc.jpg" />
@@ -94,6 +102,9 @@ All financial data is extracted in code from Yahoo Finance via yfinance library 
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/dcp.jpg" />
 
 ## Method 2: Daily Percentage Change using pct_change() formula
+
+Rather than introducing the DPC formula into the code, an alternative calculation would be to use the pandass' pct_change function. This function is used to get the percentage change between the current and prior element. In Method 2, I created new dataframes from the 'Close' column of each stock so I can apply this function. Once concatenated and renamed, the table produces a neat representation of each stocks' daily return.
+
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/dcp_2.jpg" />
 
 ## KDE Plot 
@@ -107,6 +118,9 @@ All financial data is extracted in code from Yahoo Finance via yfinance library 
 
 
 ## Present: For-loop and pct_change (Formula for obtaining returns from present date to that of previous year)
+
+### This entire analysis focuses on retroactive data for prediction purposes. It analyzes data from 09/15/2022 to the year prior. However, if we wanted to calculate daily percentage change for the present date down to the year prior, we could apply a for-loop and the pct_change function. This method closely resembles the previous example. By creating a list which is itemized by each stock, we can loop through each closing price with pct_change() applied to it. In doing so, we can append each DPC onto our list from the current date and all the way back to that date of the previous year. 
+
 ### Combine close and percent change in formula for daily return 
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/present.jpg" />
 
