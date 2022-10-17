@@ -59,16 +59,30 @@ All financial data is extracted in code from Yahoo Finance via yfinance library 
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/stock_close.jpg" />
 
 ## Stock Volume
+
+### Volume is used to measure the relative significance of a market move. The higher the volume during a price move, the more significant the move. Up volume indicates bullish trading and down volume indicates bearish trading.
+
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/volume.jpg" />
 
 ## Total Stock Traded 
+
+### Total number of stocks traded over a period of time. When prices fall with the stock volume going up, it indicates that more investors are selling that particular stock. If the prices increases with the stock volume going down, more investors are buying the stock. 
+
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/tt.jpg" />
 
 ## Argmax
+
+The pandas' argmax function returns the index of the greatest number in the indicated row or column. Axis=0 is used to indicate the column and axis=1 is used to indicate the row. Pandas' iloc function is used to return the argmax index's row with all its corresponding information from the dataset.
+
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/argmax.jpg" />
 
 
 ## Moving Averages
+
+Moving average or rolling average is used as a technical analysis tool to smooth out price data. It's a fantastic method to eliminating noise that regular line graphs of stock data characteristically produce, especially when examining open and close prices. In pandas, the rolling function is applied to calculate the moving average of a series of observations (window). Mean is calculated using the mean function on the object of window obtained.
+
+A short window (50) and long window (100) are used to compare the moving average outputs.
+
 
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/movingav.jpg" />
 
@@ -83,17 +97,18 @@ All financial data is extracted in code from Yahoo Finance via yfinance library 
 
 ## Method 2: Moving Average Visualization with HVPlot package
 
-### The benefit to using the hvplot package for plotting moving averages is the abiilty to produce an interactive map. With this map, we are able to scroll over the points that indicate entry/exit positions over the total portfolio value for the investment. Each point is able to indicate the date and the porfolio total at that position.
+### The benefit to using the hvplot package for plotting moving averages is the ability to produce an interactive map. With this map, we are able to scroll over the points that indicate entry/exit positions over the total portfolio value for the investment. Each point is able to indicate the date and the porfolio total at that position.
+
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/movingav_hvplot.jpg" />
 
 
 # Daily Percentage Change
 
-###  DPC is a technical analysis tool used to measure volatility (distribution). DPC is the change in a value of a stock over a single trading day. The larger the value (positive or negative), the more volatile the stock is.
+### Daily percentage change is a technical analysis tool used to measure volatility (distribution). DPC is the percentage change in a value of a stock over a single trading day. The larger the value (positive or negative), the more volatile the stock is. Pandas' shift function is used to calcualte this.
 
 ### 2-3% (or 0.02 / 0.03 is considered high volatility, a.k.a more risk)
 
-### Formula for calculating DPC which will be used in code:  rt = Pt/Pt-1 -1
+### Formula for calculating DPC which will be used in code (exluding dividends:  rt = Pt/Pt-1 -1
 
 ## Daily Percentage Change - AMRC
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/amrc_dpc.jpg" />
@@ -103,14 +118,19 @@ All financial data is extracted in code from Yahoo Finance via yfinance library 
 
 ## Method 2: Daily Percentage Change using pct_change() formula
 
-Rather than introducing the DPC formula into the code, an alternative calculation would be to use the pandass' pct_change function. This function is used to get the percentage change between the current and prior element. In Method 2, I created new dataframes from the 'Close' column of each stock so I can apply this function. Once concatenated and renamed, the table produces a neat representation of each stocks' daily return.
+### Rather than introducing the DPC formula into the code, an alternative calculation would be to use the pandas' pct_change function. This function is used to get the percentage change between the current and prior element. In Method 2, I created new dataframes from the 'Close' column of each stock so I can apply this function. Once concatenated and renamed, the table produces a neat representation of each stock's daily return.
 
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/dcp_2.jpg" />
 
 ## KDE Plot 
+
+### Kernel density estimate is a normalized method for visualizign the distribution of observations in a dataset. The KDE is calculated by weighing the distances of all the data points we’ve seen for each point on the line graph. 
+
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/dcp_kdeplot.jpg" />
 
-## Historgram
+## Histogram
+
+
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/dcp_hist.jpg" />
 
 ## Boxplot
