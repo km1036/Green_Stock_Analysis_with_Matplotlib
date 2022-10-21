@@ -28,13 +28,13 @@ Jupyter Notebook
 
 Python
 
-Libraries:
+### Libraries:
 
 matplotlib.pyplot as plt, pandas, hvplot.pandas, pandas_datareader, numpy, datetime, yfinance as yf, scattermatrix, warnings, mplcyberpunk
 
-Database: N/A
+### Database: N/A
 
-Dataset:
+### Dataset:
 
 All financial data is extracted in code from Yahoo Finance via yfinance library (Python). 
 
@@ -159,26 +159,56 @@ A short window (50) and long window (100) are used to compare the moving average
 
 # Cumulative Return
 
-### Cumulative return is the total change in the investment price over a set time: it = (1+rt)it-1. The cumprod function can be applied onto a dataframe to return the cumulative product. These cumulative return graphs were modified in code to display them in a readable format.
+### Cumulative return is the total change in the investment price over a set time.
+
+### Formula: it = (1+rt)it-1. The cumprod function can be applied onto a dataframe to return the cumulative product. These cumulative return graphs were modified in code with the subplots functions to create a readable and comparable display.
 
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/creturn_df.jpg" />
 
 ### The subplots functions can be used to compare graphs beside each other
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/subplots.jpg" />
+
+## Portfolio example: AMRC
+
+### Initial capital of 100,000 with a share size of 500. THe cumsum function is used to calculated cumulative return on the ARMC stock.
+
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/portfolio.jpg" />
+
+### Cumulative Return Portfolio Plot
+
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/cumulative_portf.jpg" />
+
+## Correlation and scatter matrix on 'Open' data
+
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/correlation.jpg" />
+
+## Scatter plot
+
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/scatter_plot.jpg" />
+
+## Correlation table and exponentially weighted average plot
+
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/exp_weight_avg.jpg" />
 
+## Exit position
 
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/exit_position.jpg" />
 
 
+## Sharpe Ratios
+
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/sharpe.jpg" />
 
+## Backtest Formula
+
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/backtest_formula.jpg" />
+
+## Backtest Table
+
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/bacltest_table.jpg" />
+
+## Final analysis
+
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/backtest_final.jpg" />
 
 
