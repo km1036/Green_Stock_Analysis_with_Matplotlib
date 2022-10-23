@@ -83,28 +83,39 @@ All financial data is extracted in code from Yahoo Finance via yfinance library 
 
 ## Moving Averages
 
-### Moving average or rolling average is used as a technical analysis tool to smooth out price data. It's a fantastic method to eliminate noise that regular line graphs of stock data characteristically produce, especially when examining open and close prices. In pandas, the rolling function is applied to calculate the moving average of a series of observations (window). Mean is calculated using the mean function on the object of window obtained.
+### Moving average or rolling average is used as a technical analysis tool to smooth out price data. It's a fantastic method for eliminating noise that regular line graphs of stock data characteristically produce, especially when examining open and close prices. In pandas, the rolling function is applied to calculate the moving average of a series of observations (window). Mean is calculated using the mean function on the object of window obtained.
+
+### Profitable trades require knowing the right times to make an entry and exit on a particular stock. Entry points indicate the price point that is appropriate for investing and the exit point is the ideal point to sell. Moving averages, among other technical indicators such as bollinger bands and MACD are used to identify these points and predict how an asset's price might move.  As long as the 50-day moving average of a stock price remains above the 200-day moving average, the stock is generally thought to be in a bullish trend. '
+
+### As long as the 50-day moving average of a stock price remains above a 200-day moving average, the stock is generally thought to be in a bullish trend.
 
 A short window (50) and long window (100) are used to compare the moving average outputs.
-
 
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/movingav.jpg" />
 
 ## Moving Averages - AMRC Plot
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/movingav_plot.jpg" />
 
+### AMRC's 50 day moving average (pink line) follow a general downward trend for this past year with an upward tick for the month of September.
+
 ## Moving Averages - ON Plot
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/on_movingav.jpg" />
+
+### ON's 50 day moving average (blue line) follow a general upward trend for this past year with a strong upward tick for the months of August and September. What's interesting to note in this graph and what makes it stand out from the other stocks in the comparison between MA50 and MA100's (yellow) line. At the interesection point between MA50 and MA100, we see both lines begin to grow strongly in opposite directions. Thus, it's important to examine both windows to solify asset predictions.
 
 ## Moving Averages - STEM Plot
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/stem_movingav.jpg" />
 
+### STEM's 50 day moving average (blue line) follow a general downward trend for this past year with a quick upward tick for the month of September.
+
+
 ## Method 2: Moving Average Visualization with HVPlot package
 
-### The benefit to using the hvplot package for plotting moving averages is the ability to produce an interactive map. With this map, we are able to scroll over the points that indicate entry/exit positions over the total portfolio value for the investment. Each point is able to indicate the date and the porfolio total at that position. Although more interactive than the previous graph, the HVPlot fails to produce an aesthetically pleasing and easily customizable design that the previous graph produces.
+### The benefit to using the hvplot package for plotting moving averages is the ability to produce an interactive map. With this map, we are able to scroll over the points that indicate entry/exit positions over the total portfolio value for the investment. Each point is able to indicate the date and the porfolio total at that position. 
 
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/movingav_hvplot.jpg" />
 
+### Although more interactive than the previous graph, the hvplot fails to produce an aesthetically-pleasing and easily customizable design that the previous graph produces.
 
 # Daily Percentage Change
 
