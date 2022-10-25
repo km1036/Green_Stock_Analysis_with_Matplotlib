@@ -181,7 +181,7 @@ Formula: it = (1+rt)it-1. The cumprod function can be applied onto a dataframe t
 
 ## Portfolio example: AMRC
 
-Initial capital of 100,000 with a share size of 500. THe cumsum function is used to calculated cumulative return on the ARMC stock.
+Initial capital of 100,000 with a share size of 500. The cumsum function is used to calculated cumulative return on the ARMC stock.
 
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/portfolio.jpg" />
 
@@ -189,24 +189,33 @@ Initial capital of 100,000 with a share size of 500. THe cumsum function is used
 
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/cumulative_portf.jpg" />
 
-## Correlation and scatter matrix on 'Open' data
+## ## Exit Position Visualization on Portfolio with HVPlot package
+
+Short-term, active traders would examine exit positons to determine the best time to sell their stocks and generate profit. This is a historical generation of the strongest exit(red) and entry (green) positions for the active trader.
+
+<img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/exit_position.jpg" />
+
+
+## Correlation and Scatter Matrix on 'Open' Data
+
+Correlation and scatter matrix is performed on 'open' data to examine any influence or relationship between the three stocks. We can infer from this statistical measurement the amount of co-movement or relationship between stocks. This can be used as a predictive tool for predicting only the extent of the relationships between stocks to predict movement, not the performance itself.
+
+The scattermatrix function from pandas produces each stock's 'open' price data histogram-style. Because the graphs trends appear different for each, we can assume there is little influence between the stocks and their respective performances.
 
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/correlation.jpg" />
 
-## Scatter plot
+## Scatter Plot on 'Open' Data
+
+A KDE version of the scatter matrix is also produced to provide an alternative assessment. Histograms vs KDE are all personal preferences to the trader.
 
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/scatter_plot.jpg" />
 
-## Correlation table and exponentially weighted average plot
+## Correlation Table and Exponentially Weighted Average Plot
 
 The EMA is a moving average that places a greater weight and significance on the most recent data points. This technical indicator is used to produce buy and sell signals based on crossovers and divergences from the historical average. A halflife, of number of observations, used in this graph is 21 days. A 21-day SMA is the sum of the closing prices for the past 21 trading days, divided by 21.
 * The highest EMA is demonstrated by STEM, followed by AMRC, then ON. 
 
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/exp_weight_avg.jpg" />
-
-## Exit position
-
-<img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/exit_position.jpg" />
 
 ## Sharpe Ratios
 
@@ -224,7 +233,7 @@ Sharpe ratios are calcualted to compare how well an equity investment performs c
 
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/d475c71d968bee388cc17f82a590a6d6f95b7995/images/backtest_calculation.jpg" width="750" height="600" />
 
-## Final analysis
+## Final Analysis
 
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/d475c71d968bee388cc17f82a590a6d6f95b7995/images/backtest_interactive.jpg" width="750" height="600" />
 
