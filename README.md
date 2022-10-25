@@ -101,7 +101,7 @@ A short window (50) and long window (100) are used to compare the moving average
 ## Moving Averages - ON Plot
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/on_movingav.jpg" />
 
-### ON's 50 day moving average (blue line) follow a general upward trend for this past year with a strong upward tick for the months of August and September. What's interesting to note in this graph and what makes it stand out from the other stocks in the comparison between MA50 and MA100's (yellow) line. At the interesection point between MA50 and MA100, we see both lines begin to grow strongly in opposite directions. Thus, it's important to examine both windows to solify asset predictions.
+### ON's 50 day moving average (blue line) follow a general upward trend for this past year with a strong upward tick for the months of August and September. What's interesting to note in this graph and what makes it stand out from the other stocks in the comparison between MA50 and MA100's (yellow) line. At the interesection point between MA50 and MA100, we see both lines begin to grow strongly in opposite directions. Thus, it's important to examine both windows to solidify asset predictions.
 
 ## Moving Averages - STEM Plot
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/stem_movingav.jpg" />
@@ -199,6 +199,9 @@ A short window (50) and long window (100) are used to compare the moving average
 
 ## Correlation table and exponentially weighted average plot
 
+The EMA is a moving average that places a greater weight and significance on the most recent data points. This technical indicator is used to produce buy and sell signals based on crossovers and divergences from the historical average. A halflife, of number of observations, used in this graph is 21 days. A 21-day SMA is the sum of the closing prices for the past 21 trading days, divided by 21.
+* The highest EMA is demonstrated by STEM, followed by AMRC, then ON. 
+
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/exp_weight_avg.jpg" />
 
 ## Exit position
@@ -228,6 +231,11 @@ A short window (50) and long window (100) are used to compare the moving average
 
 # Conclusion
 
+In conclusion, I analyzed three stocks to understand performance by performing different technical indicators in code such as moving averages, cumulative return, daily percentage return, and sharpe ratios. The final backtest table puts all the pieces of the stock analysis together, allowing us to formulate concrete predictions on the best stock of the three to invest in. STEM presents investment risk; this is confirmed by the kernel desnity estimate plot, histogram, and boxplot produced for for the daily percentage change analyses. These are excellent visual representations of risk due to the fact that volatility is a measure of dispersion around the mean return. Wider distributions and outliers confirm greater risk. Both ON and STEM achieved their greatest cumulative return in the past two months, whereas ARMC's cumulative return is steadily decreasing. We can conclude from the exponentially moving average that there is strength is STEM's stock
+
+Although this volatility can present significant investment risk, when correctly harnessed, it can also generate solid returns for shrewd investors (risk to opportunity)
+
+steady volume and total traded values
 
 
 
