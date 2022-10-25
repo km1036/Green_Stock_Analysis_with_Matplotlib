@@ -57,9 +57,13 @@ All financial data is extracted in code from Yahoo Finance via yfinance library 
 # Data Mining and Visual Representation of Data via Python
 
 ## Stock Open Prices
+
+
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/stock_open.jpg" />
 
 ## Stock Close Prices
+
+
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/stock_close.jpg" />
 
 ## Stock Volume
@@ -176,7 +180,7 @@ Formula: it = (1+rt)it-1. The cumprod function can be applied onto a dataframe t
 
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/creturn_df.jpg" />
 
-### The subplots functions can be used to compare graphs beside each other
+The subplots functions can be used to compare graphs beside each other
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/subplots.jpg" />
 
 ## Portfolio example: AMRC
