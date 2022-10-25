@@ -211,6 +211,10 @@ The EMA is a moving average that places a greater weight and significance on the
 
 ## Sharpe Ratios
 
+Sharpe ratios are calcualted to compare how well an equity investment performs compared to the rate of return on a risk-free investment such a US treasury bonds. It evaluates the overall performance of a portolio or this scenario, a stock. SR is calculated by multiplying expected value by the difference between risk free return and asset return, then dividing it by the standard deviation of the asset excess return. An SR greater than 1 but less than 2 indicates good investment performance. A ratio < 1 is considered less than good.
+* The highest sharpe ratio is observed in ON, followed by AMRC, then STEM.
+* This formula has its limitations and can lead to unreliable results given that the standard deviation is held in the denominator. Because of this, the SR suggests equality volatility across the asset.
+
 <img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/sharpe.jpg" />
 
 ## Backtest Formula
@@ -219,25 +223,11 @@ The EMA is a moving average that places a greater weight and significance on the
 
 ## Backtest Table
 
-<img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/bacltest_table.jpg" />
 
 ## Final analysis
 
-<img src="https://github.com/katmarcin/Green_Stock_Analysis_with_Matplotlib/blob/0f56ed7087b80cf68a06abc3c4d760ce1f0fa3f9/images/backtest_final.jpg" />
 
-
-
-# Explanation of Visualization Techniques
 
 # Conclusion
 
-In conclusion, I analyzed three stocks to understand performance by performing different technical indicators in code such as moving averages, cumulative return, daily percentage return, and sharpe ratios. The final backtest table puts all the pieces of the stock analysis together, allowing us to formulate concrete predictions on the best stock of the three to invest in. STEM presents investment risk; this is confirmed by the kernel desnity estimate plot, histogram, and boxplot produced for for the daily percentage change analyses. These are excellent visual representations of risk due to the fact that volatility is a measure of dispersion around the mean return. Wider distributions and outliers confirm greater risk. Both ON and STEM achieved their greatest cumulative return in the past two months, whereas ARMC's cumulative return is steadily decreasing. We can conclude from the exponentially moving average that there is strength is STEM's stock
-
-Although this volatility can present significant investment risk, when correctly harnessed, it can also generate solid returns for shrewd investors (risk to opportunity)
-
-steady volume and total traded values
-
-
-
-
-
+In conclusion, I analyzed three stocks to understand performance by executing different technical indicators in code such as moving averages, cumulative return, daily percentage return, and sharpe ratios. The final backtest table puts all the pieces of the stock analysis together, allowing us to formulate concrete predictions on the best stock of the three to invest in. STEM presents investment risk; this is confirmed by the kernel desnity estimate plot, histogram, and boxplot produced for for the daily percentage change analyses. These are excellent visual representations of risk due to the fact that volatility is a measure of dispersion around the mean return. Wider distributions and outliers confirm greater risk. Both ON and STEM achieved their greatest cumulative return in the past two months, whereas ARMC's cumulative return is steadily decreasing. We can conclude from the exponentially moving average that there is strength is STEM's stock, however, all three stocks show a falling EMA. The final backtest table summarizes all the key technical indicators that play the largest roles in determing stocks performance: annual return, annual volatility, and sharpe ratio. For a safe long-term  investment, ON with it's high annual return, high sharpe ratio, and low volatility proves to be the best choice of the three stocks. Backtest table aside, STEM's stock is performing well with record highs, however this may not be a good time to buy in, per its cumulative return and expoentionally moving average (EMA). AMRC, on the other hand, would be an ideal stock to hold onto given its slightly high volatility, low annual return, and low sharpe ratio.
