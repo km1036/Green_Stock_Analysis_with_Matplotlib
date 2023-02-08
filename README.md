@@ -1,6 +1,6 @@
 # Green_Stock_Analysis_with_Matplotlib
 
-Personal Project: Using Python and Matplotlib to produce a comprehensive data analysis on three energy-producer companies for September 2022. This analysis showcases the performance of each respective company's stock: Ameresco (AMRC), ON Semiconductor Corp (ON), and Stem,Inc. (STEM). Data visualizations are created from this stock analysis to help investors or traders make buying or selling decisions, thereby gaining an edge in the markets.
+Personal Project: Using Python and Matplotlib to produce a comprehensive data analysis on three energy-producer companies for September 2022. This analysis showcases the performance of each respective company's stock: Ameresco (AMRC), ON Semiconductor Corp (ON), and Stem,Inc. (STEM). Data visualizations are created from this stock analysis to help investors make buying or selling decisions, thereby gaining an edge in the markets.
 
 To put in simply, this analysis provides a quick and easy way to pull live and historical market data to compare different key indicators in a clean plot format. The code is customizable and buildable to one's desired set of stock tickers for comparison. 
 
